@@ -1,0 +1,22 @@
+{
+  "manifest_version": 3,
+  "name": "Jira Side by Side",
+  "version": "1.0",
+  "description": "Extension to maintain activities in two Jira environments",
+  "background": {
+    "service_worker": "scripts/service-worker.js"
+  },
+  "side_panel": {
+    "default_path": "ui/sidepanel.html"
+  },
+  "action": {
+    "default_title": "Click to open Jira Side by Side"
+  },
+  "permissions": ["sidePanel", "tabs", "activeTab"],
+  "host_permissions": [
+    "https://*.atlassian.net/*"
+  ],
+  "icons": {
+    "128": "images/icon.png"
+  }
+}

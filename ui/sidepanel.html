@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Jira Side by Side</title>
+    <style>
+      #details {display: none;}
+      label {font-weight: bold;}
+      .status-todo {background-color: #a6a5a5;}
+      .status-inprogress {background-color: #ff9900;}
+      .status-done {background-color: #00bb00;}
+      .author {font-weight: bold;}
+      #message {color: #9d0000;}
+    </style>
+  </head>
+  <body>
+    <h1>Jira Side by Side</h1>
+    <hr />
+    <p id="instructions">Please open a jira issue in HLAG site to see the linked issue in Neurored one.</p>
+    <div id="details">
+      <h2 id="remote-key"></h2>
+      <div id="message"></div>
+      <label for="origin-key">Neu Key</label>
+      <p id="origin-key"></p>
+      <label for="issue-summary">Summary</label>
+      <p id="issue-summary"></p>
+      <label for="issue-assignee">Assignee</label>
+      <p id="issue-assignee"></p>
+      <label for="issue-status">Status</label>
+      <p id="issue-status"></p>
+      <label for="issue-comments">Last comment</label>
+      <p id="issue-comments"></p>
+    </div>
+
+    <script src="../scripts/sidepanel.js"></script>
+
+  </body>
+</html>
